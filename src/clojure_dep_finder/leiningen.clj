@@ -19,7 +19,7 @@
 (defn- add-dependency [lib]
   (let [proj (read-project)
         to-replace ":dependencies ["
-        replace-with (str to-replace (leiningen-dep lib) "\n\t\t\t\t\t\t\t\t ")
+        replace-with (str to-replace (leiningen-dep lib) "\n\t\t\t ")
         new-proj (str/replace proj to-replace replace-with)]
         (write-to "project.clj" new-proj)))
 

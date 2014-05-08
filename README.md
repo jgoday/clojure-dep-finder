@@ -1,6 +1,6 @@
 # clojure-dep-finder
 
-A Clojure app to find dependencies in clojars.
+A Clojure app to find dependencies in clojars.org and maven.org.
 It modifies leiningen project.clj file with the new dependency included.
 
 ## Options
